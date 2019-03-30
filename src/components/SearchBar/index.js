@@ -25,8 +25,12 @@ export default class NavBar extends Component {
             {
               categories.map(category => (
                 <div key={category.id} className='category'>
-                  <button><i className={`fas ${category.icon} fa-2x`} /></button>
-                  {category.name}
+                  <a href='/'>
+                    <button>
+                      <i className={`fas ${category.icon} fa-2x`} />
+                    </button>
+                    <p>{category.name}</p>
+                  </a>
                 </div>
               ))
             }
