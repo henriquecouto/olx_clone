@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
 import logo from '../../assets/logo.svg'
-import './styles.css';
 
 export default class NavBar extends Component {
   render() {
     return (
       <nav>
-        <div className='container cp'>
+        <div className='container cplr'>
           <div className='container'>
             <div>
               <a href='/'><img src={logo} alt='logo' /></a>
