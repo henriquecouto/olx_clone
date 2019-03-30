@@ -1,10 +1,6 @@
-.App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
+h2 {
+  font-size: 25px;
+  font-weight: normal;
 }
 
 nav {
@@ -150,6 +146,62 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .shake-horizontal {
 	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.recent-ads {
+  height: 500px;
+}
+
+.ads {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 8px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+}
+
+.ads h5 {
+  margin: 0px;
+}
+
+.ads:hover {
+  box-shadow: 0 1px 5px -2px gray;
+}
+
+.ads:hover p {
+  color: #861BA9;
+}
+
+.ads a {
+  width: 100%;
+}
+
+.ads img {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.ads p {
+  margin: 0px;
+  height: 50px;
+  font-size: 14px;
+  word-wrap: break-word;
+  color: #4A4A4A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-height: 25px;        /* fallback */
+  max-height: 25px*2;       /* fallback */
 }
 
 @-webkit-keyframes shake-horizontal {
