@@ -23,20 +23,20 @@ export default class NavBar extends Component {
           <div className='container'>
             <div>
               <a href='/'>
-                <i class="far fa-comment fa-lg" />
+                <i className="far fa-comment fa-lg" />
                 {' '}
                 Chat
               </a>
             </div>
             <div className='item'>
               <a href='/'>
-                <i class="far fa-user fa-lg" />
+                <i className="far fa-user fa-lg" />
                 {' '}
                 Minha conta
               </a>
             </div>
             <div className='item'>
-              <button>
+              <button onClick={() => console.log('Clicou')}>
                 Anunciar
               </button>
             </div>
