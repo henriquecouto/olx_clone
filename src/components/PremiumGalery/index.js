@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import SimpleSlider from './SimpleSlider'
 import images from '../../assets'
 
 const ads = [
@@ -25,17 +26,7 @@ export default class RecentAds extends Component {
           <i className='fas fa-bookmark fa-2x' style={{ color: '#28B5D9' }} />
           <h2 style={{ marginLeft: 5 }}>Galeria Premium</h2>
         </div>
-        <div className='container row' >
-          {ads.map(item => (
-            <div className='ads ads-premium'>
-              <a href='/' >
-                <img src={item.image} />
-                <p>{item.title}</p>
-                <h5>R$ {item.price}</h5>
-              </a>
-            </div>
-          ))}
-        </div>
+        <SimpleSlider ads={ads} />
       </div >
     );
   }

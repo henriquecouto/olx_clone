@@ -51,6 +51,7 @@ a {
 
 button {
   cursor: pointer;
+  overflow: hidden;
 }
 
 .item button{
@@ -228,14 +229,38 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .premium-galery .row {
   margin-top: -30px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
 }
 
 .ads-premium {
   background-color: #fff;
-  min-width: 230px;
 }
+
+.button-slider {
+  height: 50px;
+  border-style: none; 
+  border-radius: 20px; 
+  background-color: #fff; 
+  color: #861BA9;
+}
+
+.button-slider:hover {
+  background-color: #F6F6F6; 
+}
+
+.slick-slide {
+  max-width: 233.2px;
+  margin: 0 20px;
+}
+.slick-next::before, .slick-prev::before {
+  content: none;
+}
+
+/* .slick-list {
+  margin: 0 -20px;
+} */
 
 .state a {
   font-size: 15px;
